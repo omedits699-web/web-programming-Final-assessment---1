@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petrol Calculator | Fuel Cost Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="background-pattern"></div>
+    
+    <div class="container">
+        <header class="calculator-header">
+            <div class="header-icon">⛽</div>
+            <h1>Petrol Calculator</h1>
+            <p class="subtitle">Calculate your fuel costs instantly</p>
+        </header>
+
+        <main class="calculator-content">
+            <div class="input-group">
+                <label for="pricePerLiter">
+                    <span class="label-icon">💰</span>
+                    Price per Liter (SR)
+                </label>
+                <div class="input-wrapper">
+                    <span class="currency-symbol">SR</span>
+                    <input 
+                        type="number" 
+                        id="pricePerLiter" 
+                        value="1.72" 
+                        step="0.01" 
+                        min="0" 
+                        placeholder="Enter price per liter"
+                        autocomplete="off">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="liters">
+                    <span class="label-icon">⚗️</span>
+                    Liters Purchased
+                </label>
+                <div class="input-wrapper">
+                    <input 
+                        type="number" 
+                        id="liters" 
+                        value="0" 
+                        step="0.1" 
+                        min="0" 
+                        placeholder="Enter liters"
+                        autocomplete="off">
+                    <span class="unit-symbol">L</span>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button onclick="calculateTotal()" class="calculate-btn">
+                    <span class="btn-icon">🧮</span>
+                    Calculate Total
+                </button>
+                <button onclick="resetCalculator()" class="reset-btn">
+                    <span class="btn-icon">🔄</span>
+                    Reset
+                </button>
+            </div>
+
+            <div class="result-section">
+                <div class="result-card">
+                    <h3>Total Cost</h3>
+                    <div class="result-amount">
+                        <span class="currency">SR</span>
+                        <span id="result">0.00</span>
+                    </div>
+                </div>
+                
+                <div class="additional-info">
+                    <div class="info-item">
+                        <span class="info-label">Price per Liter:</span>
+                        <span class="info-value" id="priceDisplay">SR 1.72</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Liters:</span>
+                        <span class="info-value" id="litersDisplay">0.0 L</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="calculator-footer">
+            <p class="footer-text">⛽ Accurate fuel cost calculations for smart budgeting</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
