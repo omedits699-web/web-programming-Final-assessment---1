@@ -1,42 +1,35 @@
-/* ================= RESET ================= */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
     color: #333;
-    min-height: 100vh;
+    line-height: 1.6;
 }
 
-/* ================= HEADER ================= */
+/*  HEADER  */
 header {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    color: #333;
+    background-color: #2c5282;
+    color: white;
     text-align: center;
     padding: 30px 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 3px solid #1a365d;
 }
 
 header h1 {
     font-size: 2.5rem;
-    font-weight: 700;
-    background: linear-gradient(45deg, #667eea, #764ba2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    margin-bottom: 10px;
 }
 
-/* ================= NAVIGATION ================= */
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* NAV */
 nav {
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: #3182ce;
+    border-bottom: 2px solid #2c5282;
 }
 
 nav ul {
@@ -44,6 +37,7 @@ nav ul {
     justify-content: center;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -52,27 +46,24 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    color: #333;
+    color: white;
     text-decoration: none;
     padding: 15px 25px;
-    transition: all 0.3s ease;
-    font-weight: 500;
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    background: rgba(102, 126, 234, 0.1);
-    color: #667eea;
+    background-color: #2c5282;
 }
 
-/* ================= WIREFRAME ================= */
+/* Wireframe */
 .wireframe {
-    padding: 40px 20px;
+    padding: 30px 20px;
     text-align: center;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background-color: white;
     margin: 20px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .wireframe h2 {
@@ -83,13 +74,12 @@ nav ul li a:hover {
 
 .wireframe img {
     width: 100%;
-    max-width: 800px;
-    border: 2px solid #e5e7eb;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
 }
 
-/* ================= MAIN LAYOUT ================= */
+/* ]MAIN LAYOUT  */
 main {
     display: flex;
     gap: 25px;
@@ -98,48 +88,37 @@ main {
     margin: 0 auto;
 }
 
-/* ================= COLUMNS ================= */
+/*  COLUMNS */
 .column {
     flex: 1;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .column h2 {
     font-size: 1.5rem;
-    font-weight: 600;
-    color: #333;
+    color: #2c5282;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #667eea;
+    border-bottom: 2px solid #3182ce;
 }
 
-/* ================= CARDS ================= */
+/*  CARDS */
 .card {
-    background: white;
-    padding: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
     margin: 15px 0;
-    border: 1px solid #e5e7eb;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
+    border: 1px solid #ddd;
+    border-radius: 6px;
     font-size: 1rem;
-    color: #555;
-}
-
-.card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    color: #333;
 }
 
 .card h3 {
     font-size: 1.2rem;
-    font-weight: 600;
-    color: #333;
+    color: #2c5282;
     margin-bottom: 10px;
 }
 
@@ -149,62 +128,36 @@ main {
     color: #666;
 }
 
-/* ================= BUTTON ================= */
+/* BUTTON  */
 button {
     padding: 12px 25px;
-    background: linear-gradient(45deg, #667eea, #764ba2);
+    background-color: #3182ce;
     color: white;
     border: none;
-    border-radius: 8px;
-    cursor: pointer;
+    border-radius: 6px;
     font-weight: 600;
     font-size: 1rem;
-    transition: all 0.3s ease;
     margin-top: 20px;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    cursor: pointer;
 }
 
 button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    background-color: #2c5282;
 }
 
-/* ================= FOOTER ================= */
+/*FOOTER */
 footer {
-    background: rgba(31, 41, 55, 0.95);
-    backdrop-filter: blur(10px);
+    background-color: #1a365d;
     color: white;
     text-align: center;
     padding: 30px 20px;
     margin-top: 40px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 footer p {
     font-size: 0.9rem;
-    opacity: 0.9;
 }
 
-/* ================= RESPONSIVE DESIGN ================= */
-@media (max-width: 768px) {
-    main {
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-    }
-    
-    nav ul {
-        flex-direction: column;
-    }
-    
-    nav ul li a {
-        padding: 12px 20px;
-    }
-    
-    header h1 {
-        font-size: 2rem;
-    }
-}
 
 @media (max-width: 480px) {
     .column {
