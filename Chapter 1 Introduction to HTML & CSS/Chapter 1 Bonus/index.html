@@ -3,159 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML and CSS Resource Bonus</title>
+    <title>HTML and CSS Resource Guide</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Main container for the resource guide -->
     <div class="container">
-        <h1>HTML and CSS Resource Bonus</h1>
-        <p>This guide provides a quick reference to essential HTML tags and CSS properties for web development.</p>
+        
+        <!-- Main heading for the guide -->
+        <h1>HTML and CSS Resource Guide</h1>
+        
+        <!-- Introduction paragraph -->
+        <p>This guide provides a quick reference to essential HTML tags and CSS properties for web development students.</p>
 
+        <!-- HTML Tags Section -->
         <h2>HTML Tags</h2>
         <p>Below is a list of commonly used HTML tags, their purposes, and examples.</p>
 
+        <!-- h1-h6 tags -->
         <div>
             <h3>h1 to h6 - Headings</h3>
-            <p>Headings are used to define the structure and hierarchy of content. h1 is the most important, h6 the least.</p>
+            <p>Headings are used to define the structure and hierarchy of content. h1 is most important, h6 is least.</p>
             <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;
 &lt;h2&gt;Subheading&lt;/h2&gt;
 &lt;h3&gt;Sub-subheading&lt;/h3&gt;</code></pre>
         </div>
 
-
-
-
+        <!-- Paragraph tag -->
         <div>
             <h3>p - Paragraph</h3>
             <p>Defines a paragraph of text.</p>
-            <pre><code>p {
-    margin-bottom: 1em;
-}</code></pre>
+            <pre><code>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code></pre>
         </div>
 
-
-
+        <!-- Anchor tag -->
         <div>
             <h3>a - Anchor/Link</h3>
             <p>Creates a hyperlink to another page or resource.</p>
-            <pre><code>a {
-    color: blue;
-    text-decoration: underline;
-}</code></pre>
+            <pre><code>&lt;a href="https://example.com"&gt;Click here&lt;/a&gt;</code></pre>
         </div>
 
-
-
+        <!-- Image tag -->
         <div>
             <h3>img - Image</h3>
             <p>Embeds an image in the document.</p>
-            <pre><code>img {
-    width: 100%;
-    height: auto;
-}</code></pre>
+            <pre><code>&lt;img src="image.jpg" alt="Description"&gt;</code></pre>
         </div>
 
-
-
+        <!-- Unordered list -->
         <div>
             <h3>ul and li - Unordered List</h3>
             <p>Creates a bulleted list.</p>
-            <pre><code>ul {
-    list-style-type: disc;
-}
-
-
-
-li {
-    margin-bottom: 0.5em;
-}</code></pre>
+            <pre><code>&lt;ul&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
         </div>
 
+        <!-- Ordered list -->
         <div>
             <h3>ol and li - Ordered List</h3>
             <p>Creates a numbered list.</p>
-            <pre><code>ol {
-    list-style-type: decimal;
-}
-
-
-
-
-li {
-    margin-bottom: 0.5em;
-}</code></pre>
+            <pre><code>&lt;ol&gt;
+    &lt;li&gt;First step&lt;/li&gt;
+    &lt;li&gt;Second step&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
         </div>
 
+        <!-- Division tag -->
         <div>
             <h3>div - Division</h3>
             <p>A generic container for grouping content.</p>
-            <pre><code>div {
-    margin-bottom: 1em;
-}</code></pre>
+            <pre><code>&lt;div class="container"&gt;
+    &lt;p&gt;Content here&lt;/p&gt;
+&lt;/div&gt;</code></pre>
         </div>
 
-
-
-
-
+        <!-- Span tag -->
         <div>
             <h3>span - Inline Container</h3>
             <p>An inline container for styling or scripting.</p>
-            <pre><code>p {
-    color: blue;
-}</code></pre>
+            <pre><code>&lt;p&gt;This is &lt;span class="highlight"&gt;highlighted&lt;/span&gt; text.&lt;/p&gt;</code></pre>
         </div>
 
-
-
-
+        <!-- Strong tag -->
         <div>
             <h3>strong - Strong Emphasis</h3>
             <p>Makes text bold to indicate importance.</p>
-            <pre><code>p {
-    font-weight: bold;
-}</code></pre>
+            <pre><code>&lt;p&gt;This is &lt;strong&gt;important&lt;/strong&gt; text.&lt;/p&gt;</code></pre>
         </div>
 
-
-
-
+        <!-- Emphasis tag -->
         <div>
             <h3>em - Emphasis</h3>
             <p>Makes text italic to indicate emphasis.</p>
-            <pre><code>p {
-    font-style: italic;
-}</code></pre>
+            <pre><code>&lt;p&gt;This is &lt;em&gt;emphasized&lt;/em&gt; text.&lt;/p&gt;</code></pre>
         </div>
 
-
-
-
-        <div>
-            <h3>br - Line Break</h3>
-            <p>Inserts a line break.</p>
-            <pre><code>p {
-    margin-bottom: 1em;
-}</code></pre>
-        </div>
-
-
-
-
-        <div>
-            <h3>hr - Horizontal Rule</h3>
-            <p>Creates a horizontal line to separate content.</p>
-            <pre><code>p {
-    margin-bottom: 1em;
-}</code></pre>
-        </div>
-
-
-
-
+        <!-- CSS Properties Section -->
         <h2>CSS Properties</h2>
         <p>Essential CSS properties for styling web pages.</p>
 
+        <!-- Color property -->
         <div>
             <h3>color</h3>
             <p>Sets the color of text.</p>
@@ -164,9 +113,7 @@ li {
 }</code></pre>
         </div>
 
-
-
-
+        <!-- Background color -->
         <div>
             <h3>background-color</h3>
             <p>Sets the background color of an element.</p>
@@ -175,9 +122,7 @@ li {
 }</code></pre>
         </div>
 
-
-
-
+        <!-- Font family -->
         <div>
             <h3>font-family</h3>
             <p>Specifies the font family for text.</p>
@@ -186,9 +131,7 @@ li {
 }</code></pre>
         </div>
 
-
-
-
+        <!-- Font size -->
         <div>
             <h3>font-size</h3>
             <p>Sets the size of the font.</p>
@@ -197,9 +140,7 @@ li {
 }</code></pre>
         </div>
 
-
-
-
+        <!-- Margin -->
         <div>
             <h3>margin</h3>
             <p>Sets the margin around an element.</p>
@@ -208,21 +149,16 @@ li {
 }</code></pre>
         </div>
 
-
-
-
+        <!-- Padding -->
         <div>
             <h3>padding</h3>
             <p>Sets the padding inside an element.</p>
             <pre><code>div {
     padding: 20px;
-}
-</code></pre>
+}</code></pre>
         </div>
 
-
-
-
+        <!-- Border -->
         <div>
             <h3>border</h3>
             <p>Sets the border around an element.</p>
@@ -231,6 +167,7 @@ li {
 }</code></pre>
         </div>
 
+        <!-- Text align -->
         <div>
             <h3>text-align</h3>
             <p>Aligns text within an element.</p>
@@ -239,8 +176,7 @@ li {
 }</code></pre>
         </div>
 
-
-
+        <!-- Width and height -->
         <div>
             <h3>width and height</h3>
             <p>Sets the width and height of an element.</p>
@@ -250,6 +186,7 @@ li {
 }</code></pre>
         </div>
 
+        <!-- Display -->
         <div>
             <h3>display</h3>
             <p>Specifies the display behavior of an element.</p>
@@ -258,8 +195,10 @@ li {
 }</code></pre>
         </div>
 
+        <!-- End of guide -->
         <h4>End of Guide</h4>
-        <p>For more information, refer to official documentation.</p>
+        <p>For more information, refer to official HTML and CSS documentation.</p>
+        
     </div>
 </body>
 </html>
