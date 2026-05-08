@@ -1,37 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <!--character encoding and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RGB Color Guessing Game | Interactive Challenge</title>
+    <title>RGB Color Game</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Background Pattern -->
-    <div class="background-pattern"></div>
-    
-    <!-- Main Game Container -->
+    <!--  This is the main container that holds all the game elements -->
     <div class="game-container">
-        <!-- Game Header -->
+        <!-- Game Header Section: This section displays the game title and a tagline -->
         <header class="game-header">
-            <div class="header-icon">🎨</div>
-            <h1>RGB Guessing Game</h1>
-            <p class="subtitle">Test your color recognition skills!</p>
+            <h1>RGB Color Game</h1>
+            <p>Test your color skills!</p>
         </header>
 
-        <!-- Game Stats -->
+        <!--  displays the player's lives, score, and round number -->
         <div class="game-stats">
             <div class="stat-item">
-                <span class="stat-label">❤️ Lives</span>
-                <span class="stat-value" id="lives">3</span>
+                <span>Lives:</span>
+                <span id="lives">3</span>
             </div>
             <div class="stat-item">
-                <span class="stat-label">⭐ Score</span>
-                <span class="stat-value" id="score">0</span>
+                <span>Score:</span>
+                <span id="score">0</span>
             </div>
             <div class="stat-item">
+                <span>Round:</span>
+                <span id="round">1</span>
                 <span class="stat-label">🎯 Round</span>
                 <span class="stat-value" id="round">1</span>
             </div>
