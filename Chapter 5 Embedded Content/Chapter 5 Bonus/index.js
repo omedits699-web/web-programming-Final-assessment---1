@@ -8,6 +8,7 @@ const samples = [
   { name: "hello partrigde", file: "audio/hello.mp3" },
   { name: "ia tea scotchegg", file: "audio/Ia.mp3" },
   { name: "im confused", file: "audio/im confused.mp3" },
+  { name: "la", file: "audio/la.mp3" },
 
   // EXTRA PAGE
   { name: "Extra 1", file: "audio/extra1.mp3" },
