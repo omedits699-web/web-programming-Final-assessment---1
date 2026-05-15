@@ -1,4 +1,3 @@
-// AUDIO DATA
 const samples = [
   { name: "Ah-Ha", file: "audio/aha.mp3" },
   { name: "Dan", file: "audio/dan.mp3" },
@@ -10,7 +9,7 @@ const samples = [
   { name: "im confused", file: "audio/im confused.mp3" },
   { name: "la", file: "audio/la.mp3" },
 
-  // EXTRA PAGE
+  // extra pages
   { name: "Extra 1", file: "audio/extra1.mp3" },
   { name: "Extra 2", file: "audio/extra2.mp3" },
   { name: "Extra 3", file: "audio/extra3.mp3" }
@@ -32,7 +31,7 @@ function loadSamples() {
 
     const audio = new Audio(sample.file);
 
-    // GET DURATION
+    // get duratuion
     audio.addEventListener("loadedmetadata", () => {
       const duration = audio.duration.toFixed(2);
 
@@ -50,7 +49,7 @@ function loadSamples() {
     grid.appendChild(div);
   });
 
-  // ARROW VISIBILITY
+  // arrow visibility
   document.getElementById("prev").style.display =
     currentPage === 0 ? "none" : "inline-block";
 
@@ -58,7 +57,7 @@ function loadSamples() {
     (start + perPage >= samples.length) ? "none" : "inline-block";
 }
 
-// NAVIGATION
+// navigation
 function nextPage() {
   currentPage++;
   loadSamples();
@@ -69,12 +68,12 @@ function prevPage() {
   loadSamples();
 }
 
-// TEXT TO SPEECH
+// text to speech
 function speakText() {
   const text = document.getElementById("text").value;
   const speech = new SpeechSynthesisUtterance(text);
   speechSynthesis.speak(speech);
 }
 
-// INIT
+// init
 loadSamples();
