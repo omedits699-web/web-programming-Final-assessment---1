@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/*  background and text */
+/* body styles  */
 body {
     font-family: Arial, sans-serif;
     background-color: #667eea;
@@ -12,33 +12,33 @@ body {
     color: white;
     text-align: center;
 }
-/*  sets max width and centers it */
+
+/*  main container  */
 .game-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 40px 20px;
 }
 
-/* GAME HEADER */
+/*  game header */
 .game-header {
     margin-bottom: 40px;
 }
 
-/* Main game title styling */
+/* main game title styling */
 .game-header h1 {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-/* Subtitle text styling */
+/* subtitle text styling */
 .subtitle {
     font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
-/*GAME STATS */
-/* Game statistics display styling */
+/*  game stats */
 .game-stats {
     display: flex;
     justify-content: center;
@@ -46,27 +46,26 @@ body {
     margin-bottom: 40px;
 }
 
-/* Individual stat item styling */
+/* individual stat item styling */
 .stat-item {
     background: rgba(255, 255, 255, 0.2);
     padding: 15px 25px;
     border: 1px solid white;
 }
 
-/* Stat label styling (Lives, Score, Round) */
+/* stat label styling */
 .stat-label {
     font-size: 0.9rem;
     margin-bottom: 5px;
 }
 
-/* Stat value styling (numbers) */
+/* stat value styling (numbers) */
 .stat-value {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-/* RGB DISPLAY */
-/* RGB display container styling */
+/* rgb display */
 .rgb-display {
     background: rgba(255, 255, 255, 0.9);
     padding: 30px;
@@ -88,7 +87,7 @@ body {
     background: rgba(102, 126, 234, 0.1);
 }
 
-/* COLOR OPTIONS*/
+/*color options */
 .options-container {
     margin-bottom: 40px;
 }
@@ -116,7 +115,7 @@ body {
     border-color: #ef4444;
 }
 
-/*MESSAGE DISPLAY*/
+/* message display */
 .message-container {
     margin-bottom: 40px;
 }
@@ -147,7 +146,7 @@ body {
     border-color: rgba(239, 68, 68, 0.3);
 }
 
-/* GAME CONTROLS */
+/* game controls */
 .game-controls {
     display: flex;
     justify-content: center;
@@ -171,7 +170,7 @@ body {
     font-size: 1.2rem;
 }
 
-/* GAME OVER MODAL */
+/*game over modal */
 .game-over-modal {
     position: fixed;
     top: 0;
@@ -246,7 +245,7 @@ body {
     justify-content: center;
 }
 
-/* CORRECT/WRONG FEEDBACK*/
+/*correct/wrong feedback */
 .color-box.correct {
     border-color: #10b981;
     box-shadow: 0 0 30px rgba(16, 185, 129, 0.6);
@@ -261,12 +260,6 @@ body {
     animation: wrongShake 0.5s ease;
     border-color: #ef4444;
     box-shadow: 0 0 30px rgba(239, 68, 68, 0.6);
-}
-
-@keyframes wrongShake {
-    0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-10px); }
-    75% { transform: translateX(10px); }
 }
 
 .message-box.correct {
