@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!--character encoding and responsive design -->
+    <!-- meta tags for character encoding  -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RGB Color Game</title>
@@ -9,15 +9,15 @@
 </head>
 <body>
 
-    <!--  This is the main container that holds all the game elements -->
+    <!-- main game container: -->
     <div class="game-container">
-        <!-- Game Header Section: This section displays the game title and a tagline -->
+        <!-- game header section:-->
         <header class="game-header">
             <h1>RGB Color Game</h1>
             <p>Test your color skills!</p>
         </header>
 
-        <!--  displays the player's lives, score, and round number -->
+        <!-- game stats  -->
         <div class="game-stats">
             <div class="stat-item">
                 <span>Lives:</span>
@@ -35,18 +35,18 @@
             </div>
         </div>
 
-        <!-- RGB Value Display -->
+        <!-- rgb value display -->
         <div class="rgb-display">
             <h2>Find this color:</h2>
             <div class="rgb-value" id="rgbValue">rgb(123, 45, 67)</div>
         </div>
 
-        <!-- Color Options -->
+        <!-- color options -->
         <div class="options-container">
             <div id="options" class="color-options"></div>
         </div>
 
-        <!-- Message Display -->
+        <!-- message display -->
         <div class="message-container">
             <div class="message-box" id="message">
                 <span class="message-icon">🎯</span>
@@ -54,7 +54,7 @@
             </div>
         </div>
 
-        <!-- Game Controls -->
+        <!-- game controls -->
         <div class="game-controls">
             <button onclick="startGame()" class="restart-btn">
                 <span class="btn-icon">🔄</span>
@@ -66,7 +66,7 @@
             </button>
         </div>
 
-        <!-- Game Over Modal -->
+        <!-- game over modal -->
         <div class="game-over-modal" id="gameOverModal">
             <div class="modal-content">
                 <div class="modal-header">
@@ -93,7 +93,7 @@
         </div>
     </div>
 
-    <!-- JavaScript -->
+    <!-- javaScript -->
     <script src="index.js"></script>
 </body>
 </html>
