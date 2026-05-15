@@ -11,7 +11,7 @@ body {
   height: 100vh;
 }
 
-/* TTS SECTION */
+/* tts section */
 .tts {
   width: 40%;
   padding: 20px;
@@ -33,7 +33,7 @@ button {
   cursor: pointer;
 }
 
-/* SOUND BOARD */
+/* sound board */
 .soundboard {
   width: 60%;
   padding: 20px;
@@ -52,12 +52,6 @@ button {
   text-align: center;
   cursor: pointer;
 }
-
-.sample:hover {
-  background: black;
-  color: white;
-}
-
 .controls {
   margin-top: 20px;
   text-align: center;
