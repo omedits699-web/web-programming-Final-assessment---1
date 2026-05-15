@@ -7,7 +7,7 @@ body {
     line-height: 1.6;
 }
 
-/*  HEADER  */
+/* header */
 header {
     background-color: #2c5282;
     color: white;
@@ -26,7 +26,7 @@ header p {
     opacity: 0.9;
 }
 
-/* NAV */
+/* navigation */
 nav {
     background-color: #3182ce;
     border-bottom: 2px solid #2c5282;
@@ -52,11 +52,7 @@ nav ul li a {
     transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
-    background-color: #2c5282;
-}
-
-/* Wireframe */
+/* wireframe */
 .wireframe {
     padding: 30px 20px;
     text-align: center;
@@ -79,7 +75,7 @@ nav ul li a:hover {
     border-radius: 8px;
 }
 
-/* ]MAIN LAYOUT  */
+/* main layout */
 main {
     display: flex;
     gap: 25px;
@@ -88,7 +84,7 @@ main {
     margin: 0 auto;
 }
 
-/*  COLUMNS */
+/* columns */
 .column {
     flex: 1;
     background-color: white;
@@ -105,7 +101,7 @@ main {
     border-bottom: 2px solid #3182ce;
 }
 
-/*  CARDS */
+/* cards */
 .card {
     background-color: #f9f9f9;
     padding: 15px;
@@ -128,7 +124,7 @@ main {
     color: #666;
 }
 
-/* BUTTON  */
+/* button */
 button {
     padding: 12px 25px;
     background-color: #3182ce;
@@ -141,11 +137,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #2c5282;
-}
-
-/*FOOTER */
+/* footer */
 footer {
     background-color: #1a365d;
     color: white;
@@ -158,17 +150,3 @@ footer p {
     font-size: 0.9rem;
 }
 
-
-@media (max-width: 480px) {
-    .column {
-        padding: 15px;
-    }
-    
-    header h1 {
-        font-size: 1.8rem;
-    }
-    
-    button {
-        width: 100%;
-    }
-}
