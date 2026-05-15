@@ -1,37 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>The Dark Knight</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: white;
+    line-height: 1.6;
+}
 
-<body>
+/* navigation bar */
+.navbar {
+    background-color: #2c2c2c;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
 
-<div class="navbar">
-    <a href="Index.html">Home</a>
-    <a href="plot.html">Plot</a>
-    <a href="cast.html">Cast</a>
-    <a href="characters.html">Characters</a>
-    <a href="reviews.html">Reviews</a>
-</div>
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 15px;
+    background-color: #444;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
 
-<div class="section">
+/* main content section */
+.section {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #2c2c2c;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
 
-    <h1>The Dark Knight</h1>
+/* headings */
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    border-bottom: 3px solid #666;
+    padding-bottom: 10px;
+}
 
-    <p>
-        The Dark Knight is a 2008 American superhero film based on DC Comics character Batman. It is the second installment in Christopher Nolan's Dark Knight trilogy and features an ensemble cast including Christian Bale, Heath Ledger, Aaron Eckhart, Michael Caine, Maggie Gyllenhaal, and Gary Oldman.
-    </p>
+h2 {
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+}
 
-    <p><strong>Director:</strong> Christopher Nolan</p>
-    <p><strong>Release:</strong> 2008</p>
-    <p><strong>Genre:</strong> Superhero/Action</p>
-    <p><strong>Runtime:</strong> 152 minutes</p>
+h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
 
-    <a href="https://www.dc.com/movies/the-dark-knight" target="_blank" class="btn">
-        Official Website
-    </a>
-</div>
+/* paragraphs */
+p {
+    margin-bottom: 15px;
+    color: #cccccc;
+}
 
-</body>
-</html>
+/* links */
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+/* lists */
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    color: #cccccc;
+}
+/* blockquotes */
+blockquote {
+    background-color: #333;
+    border-left: 4px solid #666;
+    padding: 15px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #dddddd;
+}
+cite {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    color: #999;
+}
+/* strong text */
+strong {
+    color: #ffffff;
+}
