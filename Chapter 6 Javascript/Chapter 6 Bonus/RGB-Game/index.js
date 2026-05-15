@@ -1,10 +1,10 @@
-// Game variables
+                // game variables
 let correctColor;
 let lives;
 let score;
 let round;
 
-// Start the game
+                    // start the game
 function startGame() {
     lives = 3;
     score = 0;
@@ -15,40 +15,40 @@ function startGame() {
     generateRound();
 }
 
-// Generate a new round
+                                                // generate a new round
 function generateRound() {
     const optionsDiv = document.getElementById("options");
     optionsDiv.innerHTML = "";
     
-    // Generate 3 random colors
+                // generate 3 random colors
     let colors = [];
     for (let i = 0; i < 3; i++) {
         colors.push(randomColor());
     }
     
-    // Select correct answer randomly
+                        // Select correct answer randomly
     correctColor = colors[Math.floor(Math.random() * colors.length)];
     
-    // Display RGB value to guess
+    // display rgb value to guess
     document.getElementById("rgbValue").textContent = correctColor;
     
-    // Create color option boxes
+                                         // create color option boxes
     colors.forEach((color, index) => {
         const box = createColorBox(color, index);
         optionsDiv.appendChild(box);
     });
     
-    // Update round counter
+                                                             // update round counter
     document.getElementById("round").textContent = round;
 }
 
-// Create a color box
+                                                // create a color box   
 function createColorBox(color, index) {
     const box = document.createElement("div");
     box.className = "color-box";
     box.style.backgroundColor = color;
     
-    // Add click event
+                                             // add click event
     box.addEventListener("click", function() {
         checkAnswer(color, this);
     });
@@ -56,8 +56,9 @@ function createColorBox(color, index) {
     return box;
 }
 
-//  COLOR GENERATION 
+                            // color generation //
 /**
+ * Generate a random RGB color value
  * @returns {string} RGB color string in format "rgb(r, g, b)"
  */
 function randomColor() {
@@ -67,12 +68,14 @@ function randomColor() {
     return `rgb(${r}, ${g}, ${b})`;
 }
 
-//  ANSWER VALIDATION 
+//  answer checking and game logic
 /**
  * Check if the selected color is correct
+ * @param {string} selected - The selected RGB color
+ * @param {HTMLElement} selectedBox - The clicked color box element
  */
 function checkAnswer(selected, selectedBox) {
-    // Add visual feedback
+                     // add visual feedback
     if (selected === correctColor) {
         selectedBox.classList.add("correct");
         score++;
@@ -83,10 +86,10 @@ function checkAnswer(selected, selectedBox) {
         updateMessage("Wrong! Try again!", "wrong");
     }
     
-    // Update game statistics
+                 // update game statistics
     updateGameStats();
     
-    // Check game state
+                            // check game state
     setTimeout(() => {
         if (lives === 0) {
             endGame();
@@ -97,22 +100,22 @@ function checkAnswer(selected, selectedBox) {
     }, 1500);
 }
 
-// Update game statistics display
+                        // update game statistics display
 function updateGameStats() {
     document.getElementById("lives").textContent = lives;
     document.getElementById("score").textContent = score;
     document.getElementById("round").textContent = round;
 }
 
-// Update message display
+                        // update message display
 function updateMessage(text, type) {
     const messageBox = document.getElementById("message");
     const messageText = messageBox.querySelector(".message-text");
     
-    // Update message text
+                    // update message text
     messageText.textContent = text;
     
-    // Update message styling
+                                        // update message styling
     messageBox.className = "message-box";
     if (type === "correct") {
         messageBox.classList.add("correct");
@@ -121,16 +124,16 @@ function updateMessage(text, type) {
     }
 }
 
-// End the game and show game over modal
+                                                // end the game and show game over modal
 function endGame() {
     const modal = document.getElementById("gameOverModal");
     const finalScore = document.getElementById("finalScore");
     const performanceText = document.getElementById("performanceText");
     
-    // Update final score
+                    // update final score
     finalScore.textContent = score;
     
-    // Set performance message based on score
+                         // set performance message based on score
     let performance = "";
     if (score >= 10) {
         performance = "Outstanding! Color Master!";
@@ -146,17 +149,17 @@ function endGame() {
     
     performanceText.textContent = performance;
     
-    // Show modal
+                            // show modal
     modal.classList.add("show");
 }
 
-// Hide the game over modal
+                // hide the game over modal
 function hideGameOverModal() {
     const modal = document.getElementById("gameOverModal");
     modal.classList.remove("show");
 }
 
-// Show hint
+                        // show hint
 function showHint() {
     if (lives <= 1) {
         updateMessage("Not enough lives for hint!", "wrong");
@@ -167,7 +170,7 @@ function showHint() {
     updateGameStats();
     updateMessage("Hint shown! -1 life", "neutral");
     
-    // Highlight correct answer
+                   // highlight correct answer
     const boxes = document.querySelectorAll(".color-box");
     boxes.forEach(box => {
         if (box.style.backgroundColor === correctColor) {
@@ -176,7 +179,7 @@ function showHint() {
     });
 }
 
-// Start game when page loads
+                            // start game when page loads
 document.addEventListener("DOMContentLoaded", function() {
     startGame();
 });
