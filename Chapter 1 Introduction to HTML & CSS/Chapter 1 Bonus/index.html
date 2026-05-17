@@ -1,110 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML and CSS Resource Guide</title>
+    <title>HTML and CSS Resource Bonus</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--main container for the resource guide -->
     <div class="container">
-        
-        <!-- main heading for the guide -->
-        <h1>HTML and CSS Resource Guide</h1>
-        
-        <!-- introduction paragraph -->
-        <p>This guide provides a quick reference to essential HTML tags and CSS properties for web development students.</p>
+        <h1>HTML and CSS Resource Bonus</h1>
+        <p>This guide provides a quick reference to essential HTML tags and CSS properties for web development.</p>
 
-        <!-- html tags section -->
         <h2>HTML Tags</h2>
         <p>Below is a list of commonly used HTML tags, their purposes, and examples.</p>
 
-        <!-- h1-h6 tags -->
-        <div>
-            <h3>h1 to h6 - Headings</h3>
-            <p>Headings are used to define the structure and hierarchy of content. h1 is most important, h6 is least.</p>
-            <pre><code><h1>Main Heading</h1>
-<h2>Subheading</h2>
-<h3>Sub-subheading</h3></code></pre>
-        </div>
 
-        <!-- paragraph tag -->
+
+
         <div>
             <h3>p - Paragraph</h3>
             <p>Defines a paragraph of text.</p>
-            <pre><code><p>This is a paragraph of text.</p></code></pre>
+            <pre><code>p {
+    margin-bottom: 1em;
+}</code></pre>
         </div>
 
-        <!-- anchor tag -->
+
+
         <div>
             <h3>a - Anchor/Link</h3>
             <p>Creates a hyperlink to another page or resource.</p>
-            <pre><code><a href="https://example.com">Click here</a></code></pre>
+            <pre><code>a
+</code></pre>
         </div>
 
-        <!-- image tag -->
+
+
         <div>
             <h3>img - Image</h3>
             <p>Embeds an image in the document.</p>
-            <pre><code><img src="image.jpg" alt="Description"></code></pre>
+            <pre><code>img {
+    width: 100%;
+    height: auto;
+}</code></pre>
         </div>
 
-        <!-- unordered list -->
+
+
         <div>
             <h3>ul and li - Unordered List</h3>
             <p>Creates a bulleted list.</p>
-            <pre><code><ul>
-    <li>First item</li>
-    <li>Second item</li>
-</ul></code></pre>
+            <pre><code>ul {
+    list-style-type: disc;
+}
+
+
+
+li {
+    margin-bottom: 0.5em;
+}</code></pre>
         </div>
 
-        <!-- ordered list -->
         <div>
             <h3>ol and li - Ordered List</h3>
             <p>Creates a numbered list.</p>
-            <pre><code><ol>
-    <li>First step</li>
-    <li>Second step</li>
-</ol></code></pre>
+            <pre><code>ol {
+    list-style-type: decimal;
+}
+
+
+
+
+li {
+    margin-bottom: 0.5em;
+}</code></pre>
         </div>
 
-        <!-- division tag -->
         <div>
             <h3>div - Division</h3>
             <p>A generic container for grouping content.</p>
-            <pre><code><div class="container">
-    <p>Content here</p>
-</div></code></pre>
+            <pre><code>div {
+    margin-bottom: 1em;
+}</code></pre>
         </div>
 
-        <!-- span tag -->
+
+
+
+
         <div>
             <h3>span - Inline Container</h3>
             <p>An inline container for styling or scripting.</p>
-            <pre><code><p>This is <span class="highlight">highlighted</span> text.</p></code></pre>
+            <pre><code>p {
+    color: blue;
+}</code></pre>
         </div>
 
-        <!-- strong tag -->
+
+
+
         <div>
             <h3>strong - Strong Emphasis</h3>
             <p>Makes text bold to indicate importance.</p>
-            <pre><code><p>This is <strong>important</strong> text.</p></code></pre>
+            <pre><code>p {
+    font-weight: bold;
+}</code></pre>
         </div>
 
-        <!-- em tag -->
+
+
+
         <div>
             <h3>em - Emphasis</h3>
             <p>Makes text italic to indicate emphasis.</p>
-            <pre><code><p>This is <em>emphasized</em> text.</p></code></pre>
+            <pre><code>p {
+    font-style: italic;
+}</code></pre>
         </div>
 
-        <!-- css properties section -->
+
+
+
+        <div>
+            <h3>br - Line Break</h3>
+            <p>Inserts a line break.</p>
+            <pre><code>p {
+    margin-bottom: 1em;
+}</code></pre>
+        </div>
+
+
+
+
+        <div>
+            <h3>hr - Horizontal Rule</h3>
+            <p>Creates a horizontal line to separate content.</p>
+            <pre><code>p {
+    margin-bottom: 1em;
+}</code></pre>
+        </div>
+
+
+
+
         <h2>CSS Properties</h2>
         <p>Essential CSS properties for styling web pages.</p>
 
-        <!-- color property -->
         <div>
             <h3>color</h3>
             <p>Sets the color of text.</p>
@@ -113,7 +152,9 @@
 }</code></pre>
         </div>
 
-        <!-- background color -->
+
+
+
         <div>
             <h3>background-color</h3>
             <p>Sets the background color of an element.</p>
@@ -122,7 +163,9 @@
 }</code></pre>
         </div>
 
-        <!-- font family -->
+
+
+
         <div>
             <h3>font-family</h3>
             <p>Specifies the font family for text.</p>
@@ -131,7 +174,9 @@
 }</code></pre>
         </div>
 
-        <!-- font size -->
+
+
+
         <div>
             <h3>font-size</h3>
             <p>Sets the size of the font.</p>
@@ -140,7 +185,9 @@
 }</code></pre>
         </div>
 
-        <!-- margin -->
+
+
+
         <div>
             <h3>margin</h3>
             <p>Sets the margin around an element.</p>
@@ -149,16 +196,21 @@
 }</code></pre>
         </div>
 
-        <!-- padding -->
+
+
+
         <div>
             <h3>padding</h3>
             <p>Sets the padding inside an element.</p>
             <pre><code>div {
     padding: 20px;
-}</code></pre>
+}
+</code></pre>
         </div>
 
-        <!-- border -->
+
+
+
         <div>
             <h3>border</h3>
             <p>Sets the border around an element.</p>
@@ -167,7 +219,6 @@
 }</code></pre>
         </div>
 
-        <!-- text align -->
         <div>
             <h3>text-align</h3>
             <p>Aligns text within an element.</p>
@@ -176,7 +227,8 @@
 }</code></pre>
         </div>
 
-        <!-- width and height -->
+
+
         <div>
             <h3>width and height</h3>
             <p>Sets the width and height of an element.</p>
@@ -186,7 +238,6 @@
 }</code></pre>
         </div>
 
-        <!-- display -->
         <div>
             <h3>display</h3>
             <p>Specifies the display behavior of an element.</p>
@@ -195,10 +246,8 @@
 }</code></pre>
         </div>
 
-        <!-- end of guide -->
         <h4>End of Guide</h4>
-        <p>For more information, refer to official HTML and CSS documentation.</p>
-        
+        <p>For more information, refer to official documentation.</p>
     </div>
 </body>
 </html>
