@@ -1,160 +1,27 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+function calculateTotal() {
 
-/* body styling */
-body {
+    // getting petrol price input value
+    let price = document.getElementById("pricePerLiter").value;
 
-    font-family: Arial, sans-serif;
+    // getting liters input value
+    let liters = document.getElementById("liters").value;
 
-    background: #ffffff;
+    // converting string values into numbers
+    price = parseFloat(price);
+    liters = parseFloat(liters);
 
-    min-height: 100vh;
+    // checking if user entered valid numbers
+    if (isNaN(price) || isNaN(liters)) {
 
-    display: flex;
+        alert("Please enter valid numbers.");
 
-    justify-content: center;
+        return;
+    }
 
-    align-items: center;
-}
+    // calculating total cost
+    let total = price * liters;
 
-/* main calculator box */
-.container {
-
-    width: 400px;
-
-    background-color: white;
-
-    padding: 30px;
-
-    border-radius: 15px;
-
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* main heading */
-h1 {
-
-    text-align: center;
-
-    margin-bottom: 10px;
-
-    color: #333;
-}
-
-/* subtitle styling */
-.subtitle {
-
-    text-align: center;
-
-    color: gray;
-
-    margin-bottom: 25px;
-}
-
-/* input group spacing */
-.input-group {
-
-    margin-bottom: 20px;
-}
-
-/* label styling */
-.input-group label {
-
-    display: block;
-
-    margin-bottom: 8px;
-
-    font-weight: bold;
-
-    color: #444;
-}
-
-/* input field styling */
-.input-group input {
-
-    width: 100%;
-
-    padding: 12px;
-
-    border: 2px solid #ccc;
-
-    border-radius: 8px;
-
-    font-size: 16px;
-
-    transition: 0.3s;
-}
-
-/* focus effect for input fields */
-.input-group input:focus {
-
-    border-color: #667eea;
-
-    outline: none;
-
-    box-shadow: 0px 0px 8px rgba(102, 126, 234, 0.5);
-}
-
-/* button section */
-.button-group {
-
-    margin-top: 25px;
-}
-
-/* button styling */
-button {
-
-    width: 100%;
-
-    padding: 14px;
-
-    border: none;
-
-    border-radius: 8px;
-
-    background-color: #667eea;
-
-    color: white;
-
-    font-size: 16px;
-
-    font-weight: bold;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-/* result box styling */
-.result-box {
-
-    margin-top: 30px;
-
-    background-color: #f4f4f4;
-
-    padding: 20px;
-
-    border-radius: 10px;
-
-    text-align: center;
-}
-
-/* result heading */
-.result-box h2 {
-
-    margin-bottom: 10px;
-
-    color: #333;
-}
-
-/* result text */
-#result {
-
-    font-size: 30px;
-
-    font-weight: bold;
-
-    color: #667eea;
+    // displaying result on screen
+    document.getElementById("result").innerHTML =
+        "SR " + total.toFixed(2);
 }
